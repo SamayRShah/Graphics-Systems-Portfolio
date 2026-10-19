@@ -1,0 +1,73 @@
+#pragma once
+#include <DirectXMath.h>
+
+#include "Lights.h"
+
+// === Rasterization ===
+
+struct VertexShaderExternalData 
+{
+	DirectX::XMFLOAT4X4 world;
+	DirectX::XMFLOAT4X4 worldInverseTranspose;
+	DirectX::XMFLOAT4X4 view;
+	DirectX::XMFLOAT4X4 projection;
+};
+
+// Must match pixel shader definition!
+struct PixelShaderExternalData
+{
+	unsigned int albedoIndex;
+	unsigned int normalMapIndex;
+	unsigned int roughnessIndex;
+	unsigned int metalnessIndex;
+	DirectX::XMFLOAT2 uvScale;
+	DirectX::XMFLOAT2 uvOffset;
+	DirectX::XMFLOAT3 cameraPosition;
+	unsigned int numLights;
+	Light lights[MAX_LIGHTS];
+};
+
+// === RayTracing ===
+
+// Root constants for bindless resources
+struct RayTracingDrawData
+{
+	unsigned int SceneDataConstantBufferIndex;
+	unsigned int EntityDataDescriptorIndex;
+	unsigned int SceneTLASDescriptorIndex;
+	unsigned int OutputUAVDescriptorIndex;
+	unsigned int SkyboxDescriptorIndex;
+};
+
+// overall scene data 
+struct RayTracingSceneData
+{
+	DirectX::XMFLOAT4X4 InverseViewProjection;
+	DirectX::XMFLOAT3 CameraPosition;
+	unsigned int RaysPerPixel;
+};
+
+// per entity data
+struct RayTracingEntityData
+{
+	// properties
+	DirectX::XMFLOAT4 Color;
+	unsigned int VertexBufferDescriptorIndex;
+	unsigned int IndexBufferDescriptorIndex;
+
+	// textures
+	DirectX::XMFLOAT2 UVScale;
+	DirectX::XMFLOAT2 UVOffset;
+	unsigned int AlbedoIndex;
+	unsigned int NormalMapIndex;
+	unsigned int RoughnessIndex;
+	unsigned int MetalnessIndex;
+
+	// values
+	float Roughness;
+	float Metalness;
+	float Emissive;
+	float IOR;
+	float Alpha;
+	float pad;
+};
