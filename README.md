@@ -14,3 +14,7 @@ This repository aggregates primary engineering projects designed to demonstrate 
 *   **Core Infrastructure:** C++, DirectX 12, DXR (DirectX Raytracing) Pipeline, HLSL.
 *   Programmed an explicit rendering architecture utilizing the traditional DXR ray-generation pipeline (handling explicit RayGen, Closest Hit, and Miss shaders). Managed low-level hardware allocations manually, tracking resource barriers, descriptor heaps, and Pipeline State Objects (PSOs).
 *   Formulated ray-SDF surface intersection logic using analytic Signed Distance Functions. Calculated real-time surface normals inside pixel shaders via central differences.
+
+### [03. DirectX 11 Real-Time Renderer](./03_dx11/)
+*   **Core Infrastructure:** C++, DirectX 11, HLSL.
+*   Implemented a classic real-time rasterization pipeline, handling raw vertex/index buffer allocations, constant buffer updates, primitive topology bindings, and shader compilation states.
