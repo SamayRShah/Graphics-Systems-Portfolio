@@ -18,3 +18,7 @@ This repository aggregates primary engineering projects designed to demonstrate 
 ### [03. DirectX 11 Real-Time Renderer](./03_dx11/)
 *   **Core Infrastructure:** C++, DirectX 11, HLSL.
 *   Implemented a classic real-time rasterization pipeline, handling raw vertex/index buffer allocations, constant buffer updates, primitive topology bindings, and shader compilation states.
+
+### [04. Hardware-Software Serial IO Sync](./04_hardware_software_serial_io/)
+*   **Core Infrastructure:** Arduino (C++), Unity (C#), C++ Serial Interface, PWM Hardware Control.
+*   **Systems Architecture:** Created a low-latency serial communication pipeline handling asynchronous data streams between managed (.NET) and unmanaged (microcontroller) runtime environments.
