@@ -4,7 +4,7 @@ Coursework based graphics engine build on DX11 API
 
 ## Renderer Demo
 
-https://github.com/user-attachments/assets/54f9fd61-b61e-479b-b5f1-79ce37059262
+https://github.com/user-attachments/assets/08693395-898b-4527-819d-074ba1cc8d80
 
 ## Core Milestones & Features
 

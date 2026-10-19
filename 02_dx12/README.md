@@ -6,11 +6,11 @@ A coursework-based DirectX 12 renderer built on starter code and extended into a
 
 ## Raytracing demo
 
-https://github.com/user-attachments/assets/8af63285-2a5d-4cc8-9480-02ca96ec945b
+https://github.com/user-attachments/assets/cb39e032-5150-4369-9044-8e01e260572a
 
 ## Hybrid pipeline demo
 
-https://github.com/user-attachments/assets/08c185a1-e052-4a7e-ba8b-e1169928eec3
+https://github.com/user-attachments/assets/a1e38bdd-2961-4349-b2a6-07e7cdffede5
 
 ## Core Milestones & Features
 

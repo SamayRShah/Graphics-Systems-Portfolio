@@ -6,7 +6,8 @@ The ray tracer focuses on cache-aware data layouts, manual memory arenas, and SI
 Planned upgrades include multi-threading, replacing used std libraries, and raw AVX & SSE intrinsics instead of dxmath
 
 ## Demo
-https://github.com/user-attachments/assets/5f76a434-5a09-42d1-aa98-c00bb60b8e39
+
+https://github.com/user-attachments/assets/3be006d4-e79b-4948-8c7b-240b06d6fdfe
 
 ## Build Instructions
 
